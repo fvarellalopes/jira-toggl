@@ -3,33 +3,29 @@
   "description": "A web extension for syncing Toggl timelog entries to your Jira Software worklog",
   "version": null,
   "permissions": [
-    "https://*/",
-    "http://*/",
     "storage"
   ],
-  "applications": {
-    "gecko": {
-      "id": "{b8f6741b-8299-451d-ab45-6d4838409f07}"
-    }
+  "host_permissions": [
+    "https://*/",
+    "http://*/"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
   },
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "icons": {
     "16": "icons/jira-toggl_16.png",
     "48": "icons/jira-toggl_48.png",
     "128": "icons/jira-toggl_128.png"
   },
-  "browser_action": {
+  "action": {
     "default_title": "jira-toggl",
     "default_popup": "popup/popup.html"
   },
   "background": {
-    "scripts": [
-      "background.js"
-    ]
+    "service_worker": "background.js"
   },
   "options_ui": {
-    "page": "options/options.html",
-    "chrome_style": true
+    "page": "options/options.html"
   }
 }

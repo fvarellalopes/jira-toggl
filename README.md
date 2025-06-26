@@ -1,12 +1,4 @@
-[![Build Status](https://travis-ci.org/simoneldevig/jira-toggl.svg?branch=master)](https://travis-ci.org/simoneldevig/jira-toggl)
-
-***
-
-:warning: **Archived** :warning:
-
-I'm archiving this repo as I'm no longer using JIRA together with Toggl. Feel free to fork it and release a new version.
-
-***
+Fork from [dogawaf/jira-toggl](https://github.com/dogawaf/jira-toggl) to work with newer version of chrome and google extension policies.
 
 <img src="src/icons/jira-toggl_128.png" alt="HeadRest" width="128"/>
 
@@ -24,8 +16,6 @@ A web extension for syncing Toggl timelog entries to your Jira Software worklog.
 
 ## Download
 Link to Chrome store: https://tinyurl.com/y4pj9por
-
-Link to Firefox store: https://tinyurl.com/y5as5wkc
 
 ## Specific options
 
